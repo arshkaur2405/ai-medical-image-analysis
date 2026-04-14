@@ -17,15 +17,15 @@ In many healthcare settings, doctors rely on imaging (radiology) to detect condi
 - **Language:** Python 3.x  
 - **Libraries:** TensorFlow (Keras), NumPy, OpenCV (cv2), Matplotlib, scikit-learn  
 - **Model:** Transfer learning with a pre-trained MobileNetV2 CNN (TensorFlow/Keras) for classification.  
-- **Data:** Public medical image datasets (Chest X-rays or MRI). We use (for example) the NIH Chest X-Ray dataset (112,000+ images)【29†L254-L262】, or Kaggle’s pneumonia/MRI datasets. 
+- **Data:** COVID-19 radiographic dataset
 
 ## Dataset
 
 We use [publicly available images] such as chest X-rays labeled for disease. Example datasets:
 
-- **NIH Chest X-Ray Dataset:** ~112,000 frontal X-ray images with labels【29†L254-L262】. Classes include Pneumonia, Tuberculosis, etc.  
+- **Lung opacity Dataset:** ~112,000 frontal X-ray images with labels【29†L254-L262】.  
 - **Kaggle Pneumonia Dataset:** Thousands of pediatric X-rays labeled Normal or Pneumonia.  
-- **OASIS Brain MRI:** MRI scans for Alzheimer’s studies. (Optional, if experimenting with brain MRI.)  
+- **COVID:**COVID-19 radiographic dataset.  
 
 Images are organized into `data/train/` and `data/test/` directories by class. A *single run* uses these to train and evaluate the CNN.
 
